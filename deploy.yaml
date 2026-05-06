@@ -1,22 +1,22 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata: 
-  name: deployment-service
+  name: deployment-payment
 
 spec:
   replicas: 2
   selector:
     matchLabels:
-      service: service
+      service: payment
 
   template:
     metadata:
       labels:
-        service: service
+        service: payment
 
     spec:
       containers:
         - name: v1
-          image: manishramdhave/service:1.0
+          image: manishramdhave/payment:1.0
           ports:
             - containerPort: 8080
