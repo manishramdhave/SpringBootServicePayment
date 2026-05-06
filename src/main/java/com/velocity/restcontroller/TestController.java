@@ -11,8 +11,8 @@ public class TestController {
 	 * screen
 	 */
 
-	@GetMapping("/getOrder")
-	public String getOrder() {
-		return "This is Order Page";
+	@GetMapping("/getPayment")
+	public String getPayment() {
+		return "This is Payment Page";
 	}
 }
