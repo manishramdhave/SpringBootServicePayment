@@ -36,4 +36,3 @@ public class TestController {
                 "</html>";
 	}
 }
- **JSON data** to a frontend (like React or Angular) or use a **Thymeleaf template** located in `src/main/resources/templates`.
